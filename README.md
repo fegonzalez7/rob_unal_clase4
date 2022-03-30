@@ -1,6 +1,6 @@
 # Phantom X Robot
 ## Requirements
----
+
 So far you have used git (it is cool, right),but there is a bunch of commands you should try.
 
 ### Setting the ssh key
