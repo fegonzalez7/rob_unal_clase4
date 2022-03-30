@@ -50,9 +50,147 @@ git config --list
 
 Just in case check the [previous class](https://github.com/fegonzalez7/rob_unal_clase3).
 
+
+## Create your own Github repo
+
+Well, what I am presenting here is just a summary, Git and its use deserve a full course, but I am gonna try to provide the basics (again if you got a job using what you learned here, help me!).
+
+The following example is related to the px_robot repo. So let's start. 
+
+I just created a folder, in this case is a ROS package, so open the terminal and run:
+
+```shell
+git init
+```
+![](https://i.postimg.cc/JhwPtB8s/Screenshot-from-2022-03-29-20-12-36.png)
+
+The check the status:
+
+```shell
+git status
+```
+![](https://i.postimg.cc/sDqJ0ZvT/Screenshot-from-2022-03-29-20-17-31.png)
+
+It should be crying becuase no files/folders have been added. 
+
+**Tip:** DO NOT ADD THE .VSCODE FOLDER.
+
+Let's add the files.
+
+All files:
+
+```shell
+git add .
+```
+
+All files except the .vscode folder:
+```shell
+ git add --all -- ':!/.vscode'
+```
+
+![](https://i.postimg.cc/x1GbykHJ/Screenshot-from-2022-03-29-20-19-05.png)
+
+There is a more **pro** way using .gitignore, but hey google it.
+
+Run a *git status* to check:
+
+![](https://i.postimg.cc/m2CSJgCR/Screenshot-from-2022-03-29-20-19-16.png)
+
+It is time to make a commit, for God's sake, add a comment.
+
+```shell
+git commit -m 'Primera version px_robot'
+```
+
+![](https://i.postimg.cc/cLWcSGB3/Screenshot-from-2022-03-29-20-20-23.png)
+
+So far you have created a local repo, you can jump between versions, commits, etc. I encourage you to experiment by yourself, Git is useful tool.
+
+Now it is time to create a remote repo, I know it is mainstream but Guthub is yout friend, just go to your Github account and create a new repo. 
+
+**Tip:** Use logical names, in this case the repo's name is the same that the package.
+
+![](https://i.postimg.cc/52f8rqfq/Screenshot-from-2022-03-29-20-20-59.png)
+
+Take note of the repo URL:
+
+![](https://i.postimg.cc/d1csWnYJ/Screenshot-from-2022-03-29-20-30-21.png)
+
+Come back to your local repo and add the remote url.
+
+```shell
+git remote add origin git@github.com:felipeg17/px_robot.git
+git remote -v
+```
+![](https://i.postimg.cc/fR5YQtL4/Screenshot-from-2022-03-29-20-22-11.png)
+
+The repos are linked, now just make a pull (take from the the cloud):
+
+```shell
+git pull origin master --allow-unrelated-histories 
+```
+Merge wit your local repo and that's it.
+
+![](https://i.postimg.cc/5N6hCvhg/Screenshot-from-2022-03-29-20-23-01.png)
+
+![](https://i.postimg.cc/J0dSF4kj/Screenshot-from-2022-03-29-20-22-45.png)
+
+Now push your local repo:
+
+```shell
+git push origin master 
+```
+
+![](https://i.postimg.cc/50srHNpD/Screenshot-from-2022-03-29-20-23-32.png)
+
+Check the internet, and voila:
+
+![](https://i.postimg.cc/qqg52V5q/Screenshot-from-2022-03-29-20-23-47.png)
+
+Just in case check the time line using *git log*:
+
+```shell
+git log
+```
+
+![](https://i.postimg.cc/cC8csszR/Screenshot-from-2022-03-29-20-24-05.png)
+
+Now just repeat the process: make changes - add them - make commits - pull the repo - push your changes.
+
+If you are using *vs code*, it determines that you have git, you can use the GUI to make commits and pushes. You must be logged with your git account into *vscode*.
+
+![](https://i.postimg.cc/CK3Gcy5d/Screenshot-from-2022-03-29-19-23-55.png)
+
+Git detects the changes, just add them with the *+*.
+
+![](https://i.postimg.cc/wMHhdhhp/Screenshot-from-2022-03-29-19-24-13.png)
+
+Create a commit.
+
+![](https://i.postimg.cc/qBXsx5TM/Screenshot-from-2022-03-29-19-24-29.png)
+
+Push the changes.
+
+**Tip:** Maybe more advanced topics are gonna be covered in the course, but in the case we could not. Check: git branches, git stage, git checkouts.
+
 ---
 
 ## The Phantom X
 
+Time to the action. Go an clone the [px_robot](https://github.com/felipeg17/px_robot.git) repo.
 
+------------
+
+`<Lab guide>` : 
+------------
+
+**Acknowledgments:**
+
+ - Jose Manuel Fajardo
+ - Sebastian Realpe 
+
+This repo has taken a lot of effort, so consider to leave a star, [follow me](https://felipeg17.github.io/index.html), and if you feel generous I have [Paypal](https://paypal.me/fegonzalez17?country.x=CO&locale.x=en_US) (just kidding).
+
+
+I have a new request: Create questions in ROS Answers and in stack overflow, send me the links, I will answer them. I need reputation. 
 
