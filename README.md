@@ -228,6 +228,38 @@ Seriously I spent more than a day trying to figure out this. [Fajardo](https://g
 
 **P.D:** It works on Matlab 2020b, I tried in the 2022 and it did not work, if someone managed to make it work, add it here. This is the las semester that we use Matlab.
 
+## Issues
+
+### cmake
+Sometimes dumblab does not detect cmake, so on matlab console run:
+
+```sh
+!ckmake --version
+```
+
+If you get:
+
+```sh
+cmake: /usr/local/MATLAB/R2020b/bin/glnxa64/libcurl.so.4: no version information available (required by cmake)
+cmake: /usr/local/MATLAB/R2020b/sys/os/glnxa64/libstdc++.so.6: version `GLIBCXX_3.4.26' not found (required by cmake)
+cmake: /usr/local/MATLAB/R2020b/sys/os/glnxa64/libstdc++.so.6: version `GLIBCXX_3.4.26' not found (required by /usr/lib/x86_64-linux-gnu/libjsoncpp.so.1)
+```
+
+I tried a lot of things, edit the path, change dirs, anyway, what finally works:
+
+```sh
+cd 
+gedit .bashrc
+```
+
+In the very last part add:
+
+```
+export LD_PRELOAD="/usr/lib/x86_64-linux-gnu/libstdc++.so.6"
+```
+
+Save, close and rerun matlab, it should have worked. 
+
 ---
 
 ## The Phantom X
