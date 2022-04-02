@@ -256,9 +256,16 @@ In the very last part add:
 
 ```
 export LD_PRELOAD="/usr/lib/x86_64-linux-gnu/libstdc++.so.6"
+export LD_PRELOAD="/usr/lib/x86_64-linux-gnu/libstdc++.so.6:/usr/lib/x86_64-linux-gnu/libcurl.so"
 ```
 
+If you are using zrc just edit its config.
+
 Save, close and rerun matlab, it should have worked. 
+
+[![Screenshot-from-2022-04-02-18-32-11.png](https://i.postimg.cc/9FGPg01v/Screenshot-from-2022-04-02-18-32-11.png)](https://postimg.cc/XpYypVR8)
+
+Again last time that we use matlab, it creates more problems than what it solves.
 
 ---
 
