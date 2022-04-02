@@ -1,6 +1,24 @@
 # Phantom X Robot
 ## Requirements
 
+## bashrc tricks
+
+Editing the bashrc means a great power but a huge responsability as well.
+
+![](https://i.redd.it/tcso5tdlzy631.png)
+
+Edit the *bash*:
+
+```sh
+gedit ~/.bashrc
+```
+
+[![Screenshot-from-2022-04-02-18-36-24.png](https://i.postimg.cc/J0QnJfcd/Screenshot-from-2022-04-02-18-36-24.png)](https://postimg.cc/30dYQbqg)
+
+Add the *aliases*, *exports*, all the stuff you want, it will allow you free the use oof the terminal. Close using *ctrl + q*, close an reopen. 
+
+## Git stuff
+
 So far you have used git (it is cool, right),but there is a bunch of commands you should try.
 
 ### Setting the ssh key
