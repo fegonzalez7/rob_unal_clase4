@@ -173,7 +173,7 @@ Push the changes.
 
 Just in case check the [previous class](https://github.com/fegonzalez7/rob_unal_clase3).
 
-Because Matlab is so **freaking useless**,, the dynamixel_workbench packages are not added by default. So we have to created them as custom messages.
+Because Matlab is so **freaking useless**, the dynamixel_workbench packages are not added by default. So we have to created them as custom messages.
 
 We need to create a isolated *workspace* with these messages.
 ```shell
@@ -194,14 +194,14 @@ pyenv
 ```
 [![Screenshot-from-2022-04-02-15-18-10.png](https://i.postimg.cc/05MfcRkT/Screenshot-from-2022-04-02-15-18-10.png)](https://postimg.cc/Sj4CxPzd)
 
-Surely it is not set up properly (matlab is so dumb), so type:
+Surely it is not set up properly (**matlab is so dumb**), so type:
 
 ```shell
 pyenv('Version','/usr/bin/python2.7')
 ```
 [![Screenshot-from-2022-04-02-15-18-17.png](https://i.postimg.cc/TYncvVWQ/Screenshot-from-2022-04-02-15-18-17.png)](https://postimg.cc/MvKByj5j)
 
-Now its time to generate the msgs, first get the just compiled dynanixel package, in my case */home/felipe/dyna_ws/src/dynamixel-workbench-msgs*, but in your may be different. Go tomatlab an type:
+Now it is time to generate the msgs, first get the just compiled dynanixel package, in my case */home/felipe/dyna_ws/src/dynamixel-workbench-msgs*, but in your may be different. Go to matlab an type:
 
 ```shell
 rosgenmsg('/home/felipe/dyna_ws/src/dynamixel-workbench-msgs')
@@ -222,7 +222,9 @@ If you get the following, that's fine you got it. Otherwise you are kinda f***ed
 
 [![Screenshot-from-2022-04-02-15-19-39.png](https://i.postimg.cc/R0Z1t2pb/Screenshot-from-2022-04-02-15-19-39.png)](https://postimg.cc/NKZrqCc1)
 
-Seriously I spent more than a day triing to figure out this. Fajardo helped me in the end, but if you guys do not say thanks, donate and leave starts, or join to my researh team (:grin:)....well "no hay palabras...en la buena! :skull_and_crossbones: :skull_and_crossbones:".
+Seriously I spent more than a day trying to figure out this. [Fajardo](https://github.com/jmfajardod) helped me in the end, but if you guys do not say thanks, donate and leave starts, ....well "no hay palabras...en la buena! :skull_and_crossbones: :skull_and_crossbones:".
+
+**Notice:** join to my researh team (:grin:).
 
 **P.D:** It works on Matlab 2020b, I tried in the 2022 and it did not work, if someone managed to make it work, add it here. This is the las semester that we use Matlab.
 
