@@ -291,6 +291,12 @@ Again last time that we use matlab, it creates more problems than what it solves
 
 Time to the action. Go an clone the [px_robot](https://github.com/felipeg17/px_robot.git) repo.
 
+<img src="https://www.trossenrobotics.com/Shared/Images/Product/PhantomX-Pincher-Robot-Arm-Kit-Mark-II/pincher.jpg" alt="px" width="400"/>
+
+**The duel:** Make your bet...the robot vs the dogo.
+
+<img src=https://i.postimg.cc/15pncyqW/Screenshot-from-2022-04-03-01-07-50.png alt="duel" width="400"/>
+
 ------------
 
 `<Lab guide>` : 
@@ -301,8 +307,8 @@ Time to the action. Go an clone the [px_robot](https://github.com/felipeg17/px_r
  - Jose Manuel Fajardo
  - Sebastian Realpe 
 
-This repo has taken a lot of effort, so consider to leave a star, [follow me](https://felipeg17.github.io/index.html), and if you feel generous I have [Paypal](https://paypal.me/fegonzalez17?country.x=CO&locale.x=en_US) (just kidding).
+This repo has taken a lot of effort, so consider to leave a star, [follow me](https://felipeg17.github.io/index.html), and if you feel generous I have [Paypal](https://paypal.me/fegonzalez17?country.x=CO&locale.x=en_US) (just kidding or :neckbeard:).
 
 
-I have a new request: Create questions in ROS Answers and in stack overflow, send me the links, I will answer them. I need reputation. 
+I have a new request: Create questions in [ROS Answers](https://answers.ros.org/users/67666/fegonzalez/) and in [stack overflow](https://stackoverflow.com/users/10837057/fegonzalez), send me the links, I will answer them. I need reputation. 
 
