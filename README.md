@@ -12,8 +12,11 @@ Edit the *bash*:
 ```sh
 gedit ~/.bashrc
 ```
+<details><summary>bashrc example</summary><p>
 
 [![Screenshot-from-2022-04-02-18-36-24.png](https://i.postimg.cc/J0QnJfcd/Screenshot-from-2022-04-02-18-36-24.png)](https://postimg.cc/30dYQbqg)
+
+</p></details></br>
 
 Add the *aliases*, *exports*, all the stuff you want, it will allow you free the use oof the terminal. Close using *ctrl + q*, close an reopen. 
 
@@ -173,6 +176,8 @@ Now just repeat the process: make changes - add them - make commits - pull the r
 
 If you are using *vs code*, it determines that you have git, you can use the GUI to make commits and pushes. You must be logged with your git account into *vscode*.
 
+<details><summary>VSCode Style</summary><p>
+
 ![](https://i.postimg.cc/CK3Gcy5d/Screenshot-from-2022-03-29-19-23-55.png)
 
 Git detects the changes, just add them with the *+*.
@@ -184,6 +189,7 @@ Create a commit.
 ![](https://i.postimg.cc/qBXsx5TM/Screenshot-from-2022-03-29-19-24-29.png)
 
 Push the changes.
+</p></details>
 
 **Tip:** Maybe more advanced topics are gonna be covered in the course, but in the case we could not. Check: git branches, git stage, git checkouts.
 
@@ -319,3 +325,5 @@ This repo has taken a lot of effort, so consider to leave a star, [follow me](ht
 I have a new request: Create questions in [ROS Answers](https://answers.ros.org/users/67666/fegonzalez/) and in [stack overflow](https://stackoverflow.com/users/10837057/fegonzalez), send me the links, I will answer them. I need reputation. 
 
 **P.D:** No animals were hurt making this repo, but a Phanthom X was defeated.....:skull: :robot:
+
+
