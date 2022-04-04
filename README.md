@@ -295,7 +295,13 @@ Time to the action. Go an clone the [px_robot](https://github.com/felipeg17/px_r
 
 **The duel:** Make your bet...the robot vs the dogo.
 
-<img src=https://i.postimg.cc/15pncyqW/Screenshot-from-2022-04-03-01-07-50.png alt="duel" width="400"/>
+<details><summary>The Fighters</summary><p>
+  <img src=https://i.postimg.cc/15pncyqW/Screenshot-from-2022-04-03-01-07-50.png alt="duel" width="400"/>
+</p></details>
+
+<details><summary>The Result</summary><p>
+  <img src=https://i.postimg.cc/9fHsNj0x/Screenshot-from-2022-04-03-21-30-33.png alt="dogo" width="400"/>
+</p></details>
 
 ------------
 
@@ -312,3 +318,4 @@ This repo has taken a lot of effort, so consider to leave a star, [follow me](ht
 
 I have a new request: Create questions in [ROS Answers](https://answers.ros.org/users/67666/fegonzalez/) and in [stack overflow](https://stackoverflow.com/users/10837057/fegonzalez), send me the links, I will answer them. I need reputation. 
 
+**P.D:** No animals were hurt making this repo, but a Phanthom X was defeated.....:skul: :robot:
