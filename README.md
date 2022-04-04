@@ -318,4 +318,4 @@ This repo has taken a lot of effort, so consider to leave a star, [follow me](ht
 
 I have a new request: Create questions in [ROS Answers](https://answers.ros.org/users/67666/fegonzalez/) and in [stack overflow](https://stackoverflow.com/users/10837057/fegonzalez), send me the links, I will answer them. I need reputation. 
 
-**P.D:** No animals were hurt making this repo, but a Phanthom X was defeated.....:skul: :robot:
+**P.D:** No animals were hurt making this repo, but a Phanthom X was defeated.....:skull: :robot:
