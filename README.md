@@ -3,7 +3,7 @@
 
 ## bashrc tricks
 
-Editing the bashrc means a great power but a huge responsability as well.
+Editing the bashrc means a great power but a huge responsibility as well.
 
 ![](https://i.redd.it/tcso5tdlzy631.png)
 
@@ -18,11 +18,11 @@ gedit ~/.bashrc
 
 </p></details></br>
 
-Add the *aliases*, *exports*, all the stuff you want, it will allow you free the use oof the terminal. Close using *ctrl + q*, close an reopen. 
+Add the *aliases*, *exports*, all the stuff you want, it will allow you free the use of the terminal. Close using <kbd>ctrl</kbd>+<kbd>q</kbd>, close an reopen. 
 
 ## Git stuff
 
-So far you have used git (it is cool, right),but there is a bunch of commands you should try.
+So far you have used git (it is cool, right), but there is a bunch of commands you should try.
 
 ### Setting the ssh key
 It is the easiest way to interact with you git hub repo. Go to your home folder and generate the SSH key.
@@ -88,7 +88,7 @@ git status
 ```
 ![](https://i.postimg.cc/sDqJ0ZvT/Screenshot-from-2022-03-29-20-17-31.png)
 
-It should be crying becuase no files/folders have been added. 
+It should be crying because no files/folders have been added. 
 
 **Tip:** DO NOT ADD THE .VSCODE FOLDER.
 
@@ -123,7 +123,7 @@ git commit -m 'Primera version px_robot'
 
 So far you have created a local repo, you can jump between versions, commits, etc. I encourage you to experiment by yourself, Git is useful tool.
 
-Now it is time to create a remote repo, I know it is mainstream but Guthub is yout friend, just go to your Github account and create a new repo. 
+Now it is time to create a remote repo, I know it is mainstream but Github is your friend, just go to your Github account and create a new repo. 
 
 **Tip:** Use logical names, in this case the repo's name is the same that the package.
 
@@ -225,7 +225,7 @@ pyenv('Version','/usr/bin/python2.7')
 ```
 [![Screenshot-from-2022-04-02-15-18-17.png](https://i.postimg.cc/TYncvVWQ/Screenshot-from-2022-04-02-15-18-17.png)](https://postimg.cc/MvKByj5j)
 
-Now it is time to generate the msgs, first get the just compiled dynanixel package, in my case */home/felipe/dyna_ws/src/dynamixel-workbench-msgs*, but in your may be different. Go to matlab an type:
+Now it is time to generate the msgs, first get the just compiled dynamixel package, in my case */home/felipe/dyna_ws/src/dynamixel-workbench-msgs*, but in your may be different. Go to matlab and type:
 
 ```shell
 rosgenmsg('/home/felipe/dyna_ws/src/dynamixel-workbench-msgs')
@@ -248,7 +248,7 @@ If you get the following, that's fine you got it. Otherwise you are kinda f***ed
 
 Seriously I spent more than a day trying to figure out this. [Fajardo](https://github.com/jmfajardod) helped me in the end, but if you guys do not say thanks, donate and leave starts, ....well "no hay palabras...en la buena! :skull_and_crossbones: :skull_and_crossbones:".
 
-**Notice:** join to my researh team (:grin:).
+**Notice:** join to my research team (:grin:).
 
 **P.D:** It works on Matlab 2020b, I tried in the 2022 and it did not work, if someone managed to make it work, add it here. This is the las semester that we use Matlab.
 
@@ -324,6 +324,4 @@ This repo has taken a lot of effort, so consider to leave a star, [follow me](ht
 
 I have a new request: Create questions in [ROS Answers](https://answers.ros.org/users/67666/fegonzalez/) and in [stack overflow](https://stackoverflow.com/users/10837057/fegonzalez), send me the links, I will answer them. I need reputation. 
 
-**P.D:** No animals were hurt making this repo, but a Phanthom X was defeated.....:skull: :robot:
-
-
+**P.D:** No animals were hurt making this repo, but a Phantom X was defeated.....:skull: :robot:
