@@ -18,7 +18,7 @@ gedit ~/.bashrc
 
 </p></details></br>
 
-Add the *aliases*, *exports*, all the stuff you want, it will allow you free the use of the terminal. Close using <kbd>ctrl</kbd>+<kbd>q</kbd>, close an reopen. 
+Add the *aliases*, *exports*, all the stuff you want, it will allow you free the use of the terminal. Close using <kbd>ctrl</kbd>+<kbd>q</kbd>, close and reopen. 
 
 ## Git stuff
 
@@ -213,30 +213,30 @@ Never source that **ws** for God sake.
 
 Now go to matlab and on the console type:
 
-```shell
+```matlab
 pyenv
 ```
 [![Screenshot-from-2022-04-02-15-18-10.png](https://i.postimg.cc/05MfcRkT/Screenshot-from-2022-04-02-15-18-10.png)](https://postimg.cc/Sj4CxPzd)
 
 Surely it is not set up properly (**matlab is so dumb**), so type:
 
-```shell
+```matlab
 pyenv('Version','/usr/bin/python2.7')
 ```
 [![Screenshot-from-2022-04-02-15-18-17.png](https://i.postimg.cc/TYncvVWQ/Screenshot-from-2022-04-02-15-18-17.png)](https://postimg.cc/MvKByj5j)
 
-Now it is time to generate the msgs, first get the just compiled dynamixel package, in my case */home/felipe/dyna_ws/src/dynamixel-workbench-msgs*, but in your may be different. Go to matlab and type:
+Now it is time to generate the msgs, first get the just compiled dynamixel package, in my case *~/dyna_ws/src/dynamixel-workbench-msgs*, but in your may be different. Go to matlab and type:
 
-```shell
-rosgenmsg('/home/felipe/dyna_ws/src/dynamixel-workbench-msgs')
+```matlab
+rosgenmsg('~/dyna_ws/src/dynamixel-workbench-msgs')
 ```
 
 It takes some time trying to compile, the dumblab ask you to follow some steps, just follow them.
 
 [![Screenshot-from-2022-04-02-15-18-25.png](https://i.postimg.cc/3x7F8kXh/Screenshot-from-2022-04-02-15-18-25.png)](https://postimg.cc/WhWkSbYY)
 
-```shell
-addpath('/home/felipe/dyna_ws/src/dynamixel-workbench-msgs/matlab_msg_gen_ros1/glnxa64/install/m')
+```matlab
+addpath('~/dyna_ws/src/dynamixel-workbench-msgs/matlab_msg_gen_ros1/glnxa64/install/m')
 savepath
 clear classes
 rehash toolboxcache
@@ -246,24 +246,44 @@ If you get the following, that's fine you got it. Otherwise you are kinda f***ed
 
 [![Screenshot-from-2022-04-02-15-19-39.png](https://i.postimg.cc/R0Z1t2pb/Screenshot-from-2022-04-02-15-19-39.png)](https://postimg.cc/NKZrqCc1)
 
-Seriously I spent more than a day trying to figure out this. [Fajardo](https://github.com/jmfajardod) helped me in the end, but if you guys do not say thanks, donate and leave starts, ....well "no hay palabras...en la buena! :skull_and_crossbones: :skull_and_crossbones:".
+Seriously I spent more than a day trying to figure out this. [Fajardo](https://github.com/jmfajardod) helped me in the end, but if you guys do not say thanks, donate and leave stars, ....well "no hay palabras...en la buena! :skull_and_crossbones: :skull_and_crossbones:".
 
 **Notice:** join to my research team (:grin:).
 
 **P.D:** It works on Matlab 2020b, I tried in the 2022 and it did not work, if someone managed to make it work, add it here. This is the las semester that we use Matlab.
+
+**P.D 2:** If you have the *pathdef.m* file in a protected folder (error "Unable to save path to file ..."), you have two options:
+1. [Activate matlab license](https://la.mathworks.com/help/install/ug/activate-matlab-installation-manually.html) for root user and run matlab with `sudo matlab` (sometimes it generates problems and you must run `xhost +SI:localuser:root`). **Too boring**
+1. Search the *pathdef.m* path typing in the MATLAB command window:
+    ```matlab
+    which pathdef.m
+    ```
+	![Captura de pantalla de 2022-04-23 13-08-28](https://user-images.githubusercontent.com/30636259/164934378-2dfbf971-efb0-4d99-9dcf-85b3fa11a801.png)
+
+    and edit the file manually with a text editor.
+    ```sh
+	cd <pathdef.m_path>
+    sudo gedit pathdef.m
+    ```
+    add `'~/dyna_ws/src/dynamixel-workbench-msgs/matlab_msg_gen_ros1/glnxa64/install/m:', ...` after the line "%%% BEGIN ENTRIES %%%" and save.
+
+	![Captura de pantalla de 2022-04-23 13-09-47](https://user-images.githubusercontent.com/30636259/164934413-6f4fa9d5-f503-4652-92f3-fe16b0a08a26.png)
+
+	**Note: Be careful with the syntax, tabs and spaces, MATLAB is fussy.**
+
 
 ## Issues
 
 ### cmake
 Sometimes dumblab does not detect cmake, so on matlab console run:
 
-```sh
-!ckmake --version
+```matlab
+!cmake --version
 ```
 
 If you get:
 
-```sh
+```matlab
 cmake: /usr/local/MATLAB/R2020b/bin/glnxa64/libcurl.so.4: no version information available (required by cmake)
 cmake: /usr/local/MATLAB/R2020b/sys/os/glnxa64/libstdc++.so.6: version `GLIBCXX_3.4.26' not found (required by cmake)
 cmake: /usr/local/MATLAB/R2020b/sys/os/glnxa64/libstdc++.so.6: version `GLIBCXX_3.4.26' not found (required by /usr/lib/x86_64-linux-gnu/libjsoncpp.so.1)
@@ -278,7 +298,7 @@ gedit .bashrc
 
 In the very last part add:
 
-```
+```sh
 export LD_PRELOAD="/usr/lib/x86_64-linux-gnu/libstdc++.so.6"
 export LD_PRELOAD="/usr/lib/x86_64-linux-gnu/libstdc++.so.6:/usr/lib/x86_64-linux-gnu/libcurl.so"
 ```
