@@ -311,6 +311,27 @@ Save, close and rerun matlab, it should have worked.
 
 Again last time that we use matlab, it creates more problems than what it solves.
 
+In some cases, at least for Matlab version 2022a, the rosmsg comand ask for a 3.9 python version, in this particular case you have to dowload the version, (is not included in ubuntu as default) and then type the below steps with the version 3.9, it will be something as follows:
+```matlab
+pyenv('Version','/usr/bin/python3.9')
+rosgenmsg('~/dyna_ws/src/dynamixel-workbench-msgs')
+```
+It'll shows an error:
+
+```matlab
+Error using ros.internal.createOrGetLocalPython
+chmod: cannot access '/home/"usr"/.matlab/R2022a/ros1/glnxa64/venv/bin/activate': No such file or directory
+
+
+Error in rosgenmsg (line 88)
+    ros.internal.createOrGetLocalPython(); %ensure python is available
+```
+So go at the folder  '/home/"usr"/.matlab/R2022a/ros1/glnxa64/venv' and remove the entire directory; then in terminal type the following command in the respective folder venv:
+
+```sh
+sudo apt install python3.9-venv
+```
+its done you'll have a new python enviroment installed in the 2022a matlab version; so type the rosgenmsg command again and continue with the process.
 ---
 
 ## The Phantom X
