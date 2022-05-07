@@ -311,7 +311,7 @@ Save, close and rerun matlab, it should have worked.
 
 Again last time that we use matlab, it creates more problems than what it solves.
 
-In some cases, at least for Matlab version 2022a, the rosmsg comand ask for a 3.9 python version, in this particular case you have to dowload the version, (is not included in ubuntu as default) and then type the below steps with the version 3.9, it will be something as follows:
+In some cases, at least for Matlab version 2022a, the rosmsg command ask for a 3.9 python version, in this case you have to download the 3.9 version (which is not included in Ubuntu 20.04 by default), and then type the below steps, it will be something as follows:
 ```matlab
 pyenv('Version','/usr/bin/python3.9')
 rosgenmsg('~/dyna_ws/src/dynamixel-workbench-msgs')
